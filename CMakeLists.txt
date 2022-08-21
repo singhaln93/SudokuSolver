@@ -5,6 +5,7 @@ project(
   VERSION 0.0.220821
   LANGUAGES CXX)
 message("-- PROJECT = ${CMAKE_PROJECT_NAME} v${CMAKE_PROJECT_VERSION}")
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/scripts/cmake")
 
 # Set the compiler options
 set(CMAKE_CXX_STANDARD 20) # > Set cmake Cxx standard to 11/14/17/20
@@ -21,3 +22,15 @@ endif()
 
 # create main executable file
 add_executable(${PROJECT_NAME} main.cpp)
+include(Doxygen)
+#Doxygen({CMAKE_SOURCE_DIR}/docs/doxygen-html {CMAKE_SOURCE_DIR})
+
+#include(Format)
+#Format(.)
+
+#include(AddCppCheck)
+#AddCppCheck({CMAKE_SOURCE_DIR})
+
+#include(EnableCoverage, AddCoverage)
+#EnableCoverage({CMAKE_SOURCE_DIR})
+#AddCoverage({CMAKE_SOURCE_DIR})
