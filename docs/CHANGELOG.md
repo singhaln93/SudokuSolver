@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 ## v0.0.0 - Aug. 21,2022
 **Added**
+- Updated Cmake project
 - Set theme jekyll-theme-slate
 - Create cmake.yml
 - Added startup project
